@@ -1,43 +1,30 @@
-# p4da-capstone-api
-This is Algoritma's Python for Data Analysis Capstone Project. This project aims to create a simple API to fetch data from Heroku Server. 
-
-As a Data Scientist, we demand data to be accessible. And as a data owner, we are careful with our data. As the answer, data owner create an API for anyone who are granted access to the data to collect them. In this capstone project, we will create Flask Application as an API and deploy it to Heroku Web Hosting. 
-
-We provide a brief guideline to create the API and how to Deploy in `Capstone Guideline.ipynb` using Bahasa Indonesia. 
-
-You can check the rubrics on rubrics folder
+## About Project
+Projek ini menggunakan database chinook.db yang terdapat dalam dir /data. Dari API ini dapat diakses 3 jenis data hasil pengolahan dengan menggunakan python. Berikut ini merupakan list data yang dapat diakses beserta penjelasan singkatnya
 ___
 ## Dependencies : 
 - Pandas    (pip install pandas)
 - Flask     (pip install flask)
 - Gunicorn  (pip install gunicorn)
 ___
-## Goal 
-- Create Flask API App
-- Deploy to Heroku
-- Build API Documentation of how your API works
-- Implements the data analysis and wrangling behind the works
+'''
+Berikut ini merupakan endpoint yang tersedia dalam API:
+## Rata-rata umur pegawai berdasarkan jabatan
+Data ini merupakan data rata-rata umur dari pegawai pada setiap jawabatan. Data .json dapat diakses pada alamat berikut >> /average_age_title
 
+## Minat genre di setiap negara
+Data ini merupakan data banyaknya penggemar dari suatu genre di suatu negara tertentu >> /fav_genre/country
+
+## Data Invoice Total Negara
+Pada data ini dapat diambil data invoices dari negara yang diinginkan dengan beberapa end point sebagai berikut:
+-  /Argentina
+-  /Australia
+-  /Austria
+-  /Belgium
+-  /Spain
+-  /Sweden
+-  /USA
+-  /United Kingdom
+'''
 ___
-We have deployed a simple example on : https://algo-capstone.herokuapp.com
-Here's the list of its endpoints: 
-```
-1. / , method = GET
-Base Endpoint, returning welcoming string value. 
+We have deployed a simple example on : https://dashboard.heroku.com/apps/lugita-api
 
-2. /data/get/<data_name> , method = GET
-Return full data <data_name> in JSON format. Currently available data are:
-    - books_c.csv
-    - pulsar_stars.csv 
-    
-3. /data/get/equal/<data_name>/<column>/<value> , method = GET
-Return all <data_nam> where the value of column <column> is equal to <value>
-```
-
-If you want to try it, you can access (copy-paste it) : 
-- https://algo-capstone.herokuapp.com
-- https://algo-capstone.herokuapp.com/data/get/books_c.csv
-- https://algo-capstone.herokuapp.com/data/get/pulsar_stars.csv
-- https://algo-capstone.herokuapp.com/data/get/equal/books_c.csv/isbn/0439785960
-- https://algo-capstone.herokuapp.com/data/get/equal/books_c.csv/authors/J.K. Rowling
-- and so on, just follow the endpoint's pattern
