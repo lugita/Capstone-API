@@ -26,5 +26,5 @@ Pada data ini dapat diambil data invoices dari negara yang diinginkan dengan beb
 -  /United Kingdom
 
 ___
-We have deployed a simple example on : https://dashboard.heroku.com/apps/lugita-api
+We have deployed a simple example on : https://lugita-api.herokuapp.com/
 
