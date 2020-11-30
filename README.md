@@ -6,7 +6,7 @@ ___
 - Flask     (pip install flask)
 - Gunicorn  (pip install gunicorn)
 ___
-'''
+
 Berikut ini merupakan endpoint yang tersedia dalam API:
 ## Rata-rata umur pegawai berdasarkan jabatan
 Data ini merupakan data rata-rata umur dari pegawai pada setiap jawabatan. Data .json dapat diakses pada alamat berikut >> /average_age_title
@@ -24,7 +24,7 @@ Pada data ini dapat diambil data invoices dari negara yang diinginkan dengan beb
 -  /Sweden
 -  /USA
 -  /United Kingdom
-'''
+
 ___
 We have deployed a simple example on : https://dashboard.heroku.com/apps/lugita-api
 
